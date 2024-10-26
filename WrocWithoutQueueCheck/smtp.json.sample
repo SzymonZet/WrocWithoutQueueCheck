@@ -1,0 +1,9 @@
+{
+  "SmtpHost": "smtp.gmail.com",
+  "SmtpPort": 587,
+  "SmtpLogin": "mail_sender@example.com",
+  "SmtpPassword": "aaaa bbbb cccc dddd",
+  "SmtpUseDefaultCredentials": false,
+  "SmtpEnableSsl": true,
+  "SmtpNotificationReceiver": "mail_receiver@example.com"
+}

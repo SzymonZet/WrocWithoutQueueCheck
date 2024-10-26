@@ -1,0 +1,9 @@
+services:
+  wwqc:
+    restart: always
+    build:
+      context: ./../../
+      dockerfile: ./WrocWithoutQueueCheck/Docker/Dockerfile
+    volumes:
+      - ./docker-Logs:/wwqc-publish/Logs
+      - ./docker-Hits:/wwqc-publish/Hits

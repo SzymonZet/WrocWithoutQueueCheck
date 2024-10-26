@@ -1,2 +1,2 @@
 # WrocWithoutQueueCheck
-Simple app that sends notifications about opennings on `bez-kolejki.um.wroc.pl`
+Simple console app that sends notifications about openings on `bez-kolejki.um.wroc.pl`
