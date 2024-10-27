@@ -9,9 +9,9 @@ Simple console app that notifies about openings on `bez-kolejki.um.wroc.pl`. Wri
   - [1.3. Quickstart](#13-quickstart)
     - [1.3.1. From executable (Windows/Linux)](#131-from-executable-windowslinux)
     - [1.3.2. From Docker](#132-from-docker)
-    - [1.3.3. Settings](#133-settings)
-      - [1.3.3.1. appsettings.json](#1331-appsettingsjson)
-      - [1.3.3.2. smtp.json](#1332-smtpjson)
+  - [1.4. Settings](#14-settings)
+    - [1.4.1. appsettings.json](#141-appsettingsjson)
+    - [1.4.2. smtp.json](#142-smtpjson)
 
 ## 1.1. Main features / what can it do
 
@@ -47,9 +47,9 @@ Note: I didn't bother pushing it to any actual docker registry (nor do I plan to
 3. Open powershell/terminal, go to [Docker directory](WrocWithoutQueueCheck/Docker).
 4. Run `docker-compose up` (or `docker-compose up -d` to run in the background).
 
-### 1.3.3. Settings
+## 1.4. Settings
 
-#### 1.3.3.1. appsettings.json
+### 1.4.1. appsettings.json
 
 Note: all the configurable settings have to be set here, there is no GUI, no command line arguments etc.
 
@@ -69,7 +69,7 @@ NotificationEmails                                   | Determines, whether notif
 TimeBetweenNotificationEmailWithTheSameHitsMinutes   | [matters only if `NotificationEmails` = `true`] Determines how much time should pass to send overlapping notification. Should be set to something relatively long (maybe even longer than the default) because on one hand you may want re-notification in case you missed the first one, but on the other hand you don't want to keep spamming the same set of info that you already have
 TimeBetweenSummaryEmailHours                         | [matters only if `NotificationEmails` = `true`] Determines how often summary email (overall numbers of hits, errors + logs) should be sent
 
-#### 1.3.3.2. smtp.json
+### 1.4.2. smtp.json
 
 Note: this is optional file, it matters only if you are interested in sending notification emails. Also, for it to work you have to set `NotificationEmails` = `true` first.
 
